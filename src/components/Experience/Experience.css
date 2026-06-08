@@ -1,0 +1,186 @@
+.experience{
+  padding:120px 5%;
+  background:#0f172a;
+}
+
+.timeline{
+  max-width:900px;
+  margin:auto;
+  position:relative;
+}
+
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:20px;
+  top:0;
+  width:3px;
+  height:100%;
+  background:linear-gradient(
+    to bottom,
+    #8b5cf6,
+    #6366f1
+  );
+}
+
+.timeline-item{
+  position:relative;
+  padding-left:70px;
+  margin-bottom:60px;
+}
+
+.timeline-dot{
+  position:absolute;
+  left:10px;
+  top:8px;
+
+  width:22px;
+  height:22px;
+
+  border-radius:50%;
+
+  background:#8b5cf6;
+
+  box-shadow:
+  0 0 20px rgba(139,92,246,.8);
+}
+
+.timeline-content{
+
+  background:
+  rgba(255,255,255,.05);
+
+  border:
+  1px solid rgba(255,255,255,.08);
+
+  backdrop-filter:blur(20px);
+
+  padding:30px;
+
+  border-radius:25px;
+
+  transition:.3s;
+}
+
+.timeline-content:hover{
+
+  transform:translateY(-8px);
+
+  border-color:#8b5cf6;
+
+  box-shadow:
+  0 20px 40px rgba(139,92,246,.15);
+}
+
+.timeline-content span{
+
+  color:#8b5cf6;
+
+  font-weight:700;
+
+  font-size:14px;
+}
+
+.timeline-content h3{
+
+  color:white;
+
+  margin:10px 0 15px;
+
+  font-size:1.6rem;
+}
+
+.timeline-content p{
+
+  color:#cbd5e1;
+
+  line-height:1.8;
+}
+
+/* Buttons */
+
+.experience-buttons{
+
+  display:flex;
+
+  gap:15px;
+
+  margin-top:25px;
+
+  flex-wrap:wrap;
+}
+
+.certificate-btn,
+.case-study-btn{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:12px 24px;
+
+  border-radius:12px;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  transition:.3s;
+}
+
+.certificate-btn{
+
+  background:linear-gradient(
+    135deg,
+    #8b5cf6,
+    #6366f1
+  );
+
+  color:white;
+}
+
+.case-study-btn{
+
+  border:2px solid #8b5cf6;
+
+  color:#8b5cf6;
+
+  background:transparent;
+}
+
+.certificate-btn:hover,
+.case-study-btn:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:
+  0 10px 25px rgba(139,92,246,.35);
+}
+
+.case-study-btn:hover{
+
+  background:#8b5cf6;
+
+  color:white;
+}
+
+@media(max-width:768px){
+
+  .timeline-item{
+    padding-left:50px;
+  }
+
+  .timeline-content{
+    padding:20px;
+  }
+
+  .timeline-content h3{
+    font-size:1.2rem;
+  }
+
+  .experience-buttons{
+    flex-direction:column;
+  }
+}

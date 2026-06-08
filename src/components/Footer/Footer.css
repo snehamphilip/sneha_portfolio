@@ -1,0 +1,48 @@
+.footer{
+
+  padding:50px;
+
+  text-align:center;
+
+  background:#0b1120;
+
+  border-top:
+  1px solid rgba(255,255,255,.08);
+}
+
+.footer h2{
+
+  color:white;
+
+  margin-bottom:10px;
+}
+
+.footer p{
+
+  color:#cbd5e1;
+
+  margin-bottom:20px;
+}
+
+.socials{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:25px;
+
+  margin-bottom:20px;
+}
+
+.socials a{
+
+  color:#8b5cf6;
+
+  text-decoration:none;
+}
+
+.footer span{
+
+  color:#94a3b8;
+}
